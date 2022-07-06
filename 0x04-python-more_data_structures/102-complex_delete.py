@@ -2,11 +2,12 @@
 
 
 def complex_delete(a_dictionary, value):
-    """Delete keys with a specific value in a dictionary."""
-    while value in a_dictionary.values():
-        for k, v in a_dictionary.items():
-            if v == value:
-                del a_dictionary[k]
-                break
-
-    return (a_dictionary)
+    """
+    A function that computes the square value of
+    all integers of a matrix using map
+    """
+    a_list = list(a_dictionary.keys())
+    for key in a_list:
+        if a_dictionary[key] == value:
+            del a_dictionary[key]
+    return a_dictionary
